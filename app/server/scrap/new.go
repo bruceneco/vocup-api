@@ -2,7 +2,7 @@ package server
 
 import (
 	pb "github.com/bruceneco/vocup-api/api/scrap"
-	"github.com/bruceneco/vocup-api/app/services"
+	"github.com/bruceneco/vocup-api/app/services/scraping"
 )
 
 type scrapServer struct {

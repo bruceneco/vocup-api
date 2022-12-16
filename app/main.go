@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/bruceneco/vocup-api/api/scrap"
 	"github.com/bruceneco/vocup-api/app/server/scrap"
-	"github.com/bruceneco/vocup-api/app/services"
+	"github.com/bruceneco/vocup-api/app/services/scraping"
 	"github.com/hashicorp/go-hclog"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
