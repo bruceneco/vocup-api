@@ -35,7 +35,7 @@ func (*scrapperService) GetMostSearchedWords(nPages int) []string {
 
 			c.OnHTML(".list > li", func(e *colly.HTMLElement) {
 				mu.Lock()
-				mostSearchedWords = append(mostSearchedWords, e.DOM.Text())
+				mostSearchedWords = append(mostSearchedWords, strings.TrimSpace(e.DOM.Text()))
 				mu.Unlock()
 			})
 			c.OnScraped(func(response *colly.Response) {
