@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "api/scrap";
+
+service Scrap {
+    rpc GetTopWords (GetTopWordsReq) returns (GetTopWordsRes);
+}
+
+message GetTopWordsReq {
+    uint32 num_pages = 1;
+}
+
+message GetTopWordsRes {
+    repeated string words = 1;
+}
